@@ -1,4 +1,4 @@
-package lesson_18_06_2022_constructor;
+package lesson_18_06_2022;
 
 public class Computer {
     private String name;
