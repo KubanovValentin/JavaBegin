@@ -1,4 +1,4 @@
-package lesson_20_06_2022_21_06_2022;
+package lesson__20_06_2022__21_06_2022__22_06_2022;
 
 public class Notebook extends Computer{
     public Notebook(String name) {
@@ -10,7 +10,9 @@ public class Notebook extends Computer{
         print("Notebook  включился в сеть. моя модель -   " + getName());
     }
 
-
+    public void charging(Computer comp){
+        System.out.println("заряжается ноутбук");
+    }
     //    public Notebook(String name,
 //                    String factoryNumber,
 //                    String provider,
