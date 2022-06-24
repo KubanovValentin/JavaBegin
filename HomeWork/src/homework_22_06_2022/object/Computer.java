@@ -63,6 +63,9 @@ public class Computer extends ElectronicDevice{
     protected void print(String str) {
         System.out.println(str);
     }
+    public void connect() {
+        System.out.println("Computer connect();");
+    }
 
     public int getRam() {
         return ram;
