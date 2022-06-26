@@ -1,4 +1,4 @@
-package homework_25_06_2022;
+package homework_25_06_2022_abstractClass;
 
 public class ToshibaModel1 extends Toshiba{
     public ToshibaModel1(String name) {

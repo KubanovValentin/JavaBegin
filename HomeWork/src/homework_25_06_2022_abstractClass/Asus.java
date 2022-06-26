@@ -1,4 +1,4 @@
-package homework_25_06_2022;
+package homework_25_06_2022_abstractClass;
 
 public abstract class Asus extends Notebook{
 

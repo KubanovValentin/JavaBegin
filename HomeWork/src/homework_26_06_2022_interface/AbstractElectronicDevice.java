@@ -1,30 +1,25 @@
-package homework_25_06_2022;
+package homework_26_06_2022_interface;
 
-public abstract class ElectronicDevice {
+public abstract class AbstractElectronicDevice {
     private double weight;
     private String name;
 
-    // все эл. устройства должны будут реализовать поведение: включить/выключить
-    public abstract void on();
-    public abstract void off();
-
-    protected ElectronicDevice() {
-    }
-
-    protected ElectronicDevice(String name, double weight) {
-        this.name = name;
+    public AbstractElectronicDevice(double weight, String name) {
         this.weight = weight;
-    }
-
-    protected ElectronicDevice(String name) {
         this.name = name;
     }
 
+    public AbstractElectronicDevice(String name) {
+        this.name = name;
+    }
+
+    public AbstractElectronicDevice() {
+
+    }
 
     protected void print(String str) {
         System.out.println(str);
     }
-
 
     public double getWeight() {
         return weight;

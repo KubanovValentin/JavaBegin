@@ -1,28 +1,33 @@
-package homework_25_06_2022;
+package homework_26_06_2022_interface;
 
-public class ToshibaModel2 extends Toshiba{
+public class ToshibaModel2 extends AbstractNotebook implements Toshiba{
     public ToshibaModel2(String name) {
         super(name);
     }
 
     @Override
     public void connect() {
-        print("ToshibaModel2 connect();");
+        System.out.println("ToshibaModel2 connect();");
     }
 
     // метод, который нужно выполнить перед подключением (connect())
     // для демонстрации полиморфизма в классе Monitor в методе connectDevice
     public void initializeBeforeConnect(){
-        print("Model "+getName()+" initializing before connect...");
+        System.out.println("Model "+getName()+" initializing before connect...");
     }
 
     @Override
     public void lightKeyboard() {
-        print("ToshibaModel2 keyborad lightning");
+        print("ToshibaModel2 keyboard lightning");
     }
 
     @Override
     public void workFromBattery() {
-        print("ToshibaModel2 different working from battery");
+        System.out.println("ToshibaModel2 different working from battery");
+    }
+
+    @Override
+    public void useTouchPad() {
+        System.out.println("ToshibaModel2 using touchpad");
     }
 }

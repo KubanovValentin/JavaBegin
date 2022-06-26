@@ -1,4 +1,4 @@
-package homework_25_06_2022;
+package homework_25_06_2022_abstractClass;
 
 public class AsusModel2 extends Asus{
     public AsusModel2(String name) {
