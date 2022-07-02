@@ -25,6 +25,7 @@ public class StartComputer {
 
 //        not.charging(comp);
 //        notebook.charging(comp); нельзя сделать
+        
     }
 
     public static void doSmth(Computer comp){

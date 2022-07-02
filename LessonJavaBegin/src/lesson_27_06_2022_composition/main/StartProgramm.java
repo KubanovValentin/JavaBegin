@@ -9,5 +9,9 @@ public class StartProgramm {
         AsusModel1 asusModel1 = new AsusModel1("AsusModel1");
         AsusModel2 asusModel2 = new AsusModel2("AsusModel2");
         ToshibaModel1 toshibaModel1 = new ToshibaModel1("ToshibaModel1");
+        int a=10;
+        int b=15;
+        int c=5;
+        System.out.println(a+b+c);
     }
 }

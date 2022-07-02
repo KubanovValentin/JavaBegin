@@ -1,6 +1,9 @@
 package lesson__20_06_2022__21_06_2022__22_06_2022;
 
 public class Computer {
+    /**
+     *
+     */
     private String name;
     private String factoryNumber;
     private String provider;
@@ -11,6 +14,10 @@ public class Computer {
     private int hdd;
     private double weight;
 
+    /**
+     *
+     * @param name
+     */
     public Computer(String name) {
         this.name = name;
     }
@@ -36,6 +43,10 @@ public class Computer {
 //        this.weight = weight;
 //    }
 
+    /**
+     *
+     * @return
+     */
     public String getName() {
         return name;
     }
