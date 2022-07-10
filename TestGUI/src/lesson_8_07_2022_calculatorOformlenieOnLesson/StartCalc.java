@@ -8,9 +8,13 @@ import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.*;
+
+import static javax.swing.JOptionPane.*;
 
 public class StartCalc {
     //кнопки
@@ -75,6 +79,12 @@ public class StartCalc {
         btnSubtract = new CalcJButton("Вычитание");
         btnDivide = new CalcJButton("Деление");
         btnMultiply = new CalcJButton("Умножение");
+        btnAdd.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                throw new UnsupportedOperationException("Not suported yeat.");
+            }
+        });
     }
 
     private void createPanels() {
@@ -105,8 +115,8 @@ public class StartCalc {
     }
 
     private void createFrame() {
-        frame = new CalcJFrame("Калькулятор", 430, 200, new BorderLayout(2, 2));
-        frame.setMinimumSize(new Dimension(430, 200));
+        frame = new CalcJFrame("Калькулятор", 500, 200, new BorderLayout(2, 2));
+        frame.setMinimumSize(new Dimension(500, 200));
 
         frame.setResizable(false);
 
